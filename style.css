@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Silkscreen", cursive;
+  font-family: "Raleway", sans-serif;
   /* moving gradient background colors */
   background: linear-gradient(-45deg, #383030, #bc6082, #56569a, #bebb98);
   background-size: 400% 400%;
@@ -36,11 +36,19 @@
   margin: 10px;
 }
 
+#reading_lit2,
+#reading_lit3,
+#reading_lit4,
+#reading_lit5,
+#reading_lit6 {
+  cursor: pointer;
+}
+
 .result {
   margin-top: 30px;
 }
 
-#cerc_result {
+#result_box {
   border: 1px solid black;
   padding: 20px;
   width: 70vw;

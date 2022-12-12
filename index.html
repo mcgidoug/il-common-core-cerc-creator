@@ -15,15 +15,25 @@
 <body>
     <!-- main content -->
     <div class="main-content">
-        <h1>CERC Creator</h1>
-        <p>Please select which standard you are writing towards below.</p>
+        <div class="header">
+            <h1>CERC Creator</h1>
+            <p>Please select which standard you are writing towards below.</p>
+        </div>
 
-        <button>RL2</button>
-        <button>RL3</button>
-        <button>RL4</button>
-        <button>RL5</button>
-        <button>RL6</button>
-    </div>    
+        <div class="buttons">
+            <button id="reading_lit2">RL2</button>
+            <button id="reading_lit3">RL3</button>
+            <button id="reading_lit4">RL4</button>
+            <button id="reading_lit5">RL5</button>
+            <button id="reading_lit6">RL6</button>
+        </div>
+
+        <div class="result">
+            <h2>CERC Result</h2>
+            <div id="cerc_result"></div>
+        </div>
+    </div>
+
     <!-- js script -->
     <script src="app.js"></script>
 </body>

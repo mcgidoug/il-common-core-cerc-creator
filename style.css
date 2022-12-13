@@ -42,6 +42,7 @@
 #reading_lit5,
 #reading_lit6 {
   cursor: pointer;
+  padding: 15px;
 }
 
 .result {
@@ -58,21 +59,9 @@
 /* MEDIA QUERIES - TABLETS */
 
 @media screen and (max-width: 1024px) {
-  button {
-    font-size: 20px;
-  }
-  h1 {
-    font-size: 1.5rem;
-  }
 }
 
 /*  MEDIA QUERIES - MOBILE PHONES  */
 
 @media screen and (max-width: 600px) {
-  button {
-    font-size: 10px;
-  }
-  h1 {
-    font-size: 1rem;
-  }
 }

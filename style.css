@@ -3,37 +3,28 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  /* moving gradient background colors */
-  background: linear-gradient(-45deg, #383030, #bc6082, #56569a, #bebb98);
-  background-size: 400% 400%;
-  background-attachment: fixed;
-  animation: gradient 15s ease infinite;
-}
-
-/* moving gradient background animation */
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background-color: rgb(202, 197, 197);
 }
 
 .main-content {
-  margin-top: 15vw;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
+  padding: 40px;
+}
+
+.main-content > .header > h1 {
+  font-size: 3rem;
 }
 
 .buttons {
   margin: 10px;
+}
+
+.buttons > button {
+  font-size: 1rem;
 }
 
 #reading_lit2,
@@ -50,10 +41,11 @@
 }
 
 #result_box {
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 20px;
   width: 70vw;
   height: 40vh;
+  font-size: 1.75rem;
 }
 
 /* MEDIA QUERIES - TABLETS */

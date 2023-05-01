@@ -2,6 +2,16 @@ export const themeStems = [
   "The theme of the text is_____",
   "The theme of this piece is_____",
   "The central idea of this piece is_____",
+  "The theme of _____ is present throughout the text, as seen in_____",
+  "One of the major themes of this text is_____",
+  "Through [literary device], the author conveys the theme of_____",
+  "The author employs [symbol/imagery/metaphor] to develop the theme of_____",
+  "The theme of _____ is developed through the actions of [character's name], as seen in_____",
+  "A recurring theme in this text is_____",
+  "The theme of _____ is relevant in today's society because_____",
+  "The author's use of [literary device] helps to reinforce the theme of_____",
+  "The theme of _____ is explored in depth through the interactions between [character's name] and [character's name]_____",
+  "The theme of _____ is significant because it reveals_____",
 ];
 
 export const evidenceStem = [
@@ -12,6 +22,15 @@ export const evidenceStem = [
   "It was discovered that,",
   "The narrator states that,",
   "The character states,",
+  "[Expert's name] suggests that,",
+  "As [author's name] explains,",
+  "In support of this claim,",
+  "[Statistic/fact] indicates that _____",
+  "[Witness's name] observed that,",
+  "[Quote from a reputable source],",
+  "As demonstrated by [experiment/study],",
+  "[Historical event] serves as evidence for_____",
+  "[Personal experience] provides evidence that_____",
 ];
 
 export const reasoningStem = [

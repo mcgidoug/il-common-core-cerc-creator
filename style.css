@@ -59,8 +59,9 @@
   border: 2px solid black;
   padding: 20px;
   width: 70vw;
-  height: 40vh;
   font-size: 1.75rem;
+  max-height: 200px;
+  overflow: auto;
 }
 
 .claim_color {

@@ -35,7 +35,7 @@ function readingLit(claimArray) {
   let conclusion =
     conclusionStem[Math.floor(Math.random() * conclusionStem.length)];
   // result box
-  result.innerHTML = `${claim} ${evidence} <span class="quote">[INSERT QUOTE HERE]</span>. ${reasoning}. ${conclusion}.`;
+  result.innerHTML = `<span class="claim_color">${claim}</span> <span class="evidence_color">${evidence}[INSERT QUOTE HERE]</span>. <span class="reasoning_color">${reasoning}</span>.<span class="conclusion_color">${conclusion}</span>.`;
 }
 
 // -------- CERC FUNCTIONALITY --------

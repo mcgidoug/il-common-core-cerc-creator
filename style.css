@@ -63,8 +63,21 @@
   font-size: 1.75rem;
 }
 
-.quote {
-  color: red;
+.claim_color {
+  color: black;
+  background-color: rgba(54, 122, 59, 0.489);
+}
+.evidence_color {
+  color: black;
+  background-color: rgba(241, 241, 65, 0.831);
+}
+.reasoning_color {
+  color: black;
+  background-color: rgba(224, 142, 20, 0.887);
+}
+.conclusion_color {
+  color: black;
+  background-color: rgba(255, 0, 0, 0.732);
 }
 
 /* MEDIA QUERIES - TABLETS */

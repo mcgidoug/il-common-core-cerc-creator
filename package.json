@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "il-common-core-cerc-creator",
+  "version": "1.0.0",
+  "description": "This program was designed to generate CERC formatted paragraphs based on the Illinois Common Core 8th Grade Writing Standards.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcgidoug/il-common-core-cerc-creator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcgidoug/il-common-core-cerc-creator/issues"
+  },
+  "homepage": "https://github.com/mcgidoug/il-common-core-cerc-creator#readme"
+}

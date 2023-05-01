@@ -1,3 +1,4 @@
+import { themeStems, themeIdea, evidenceStem, reasoningStem } from "./stems.js";
 // -------- RL BUTTONS --------
 let rlButton2 = document.getElementById("reading_lit2");
 let rlButton3 = document.getElementById("reading_lit3");
@@ -11,51 +12,12 @@ let result = document.getElementById("result_box");
 // RL2 - determine theme or central idea
 function readingLit2() {
   // claim
-  let themeStems = [
-    "The theme of the text is ",
-    "The theme of this piece is ",
-    "The central idea of this piece is ",
-  ];
-  let themeIdea = [
-    "beauty.",
-    "good versus evil.",
-    "coming of age.",
-    "loyalty.",
-    "betrayal.",
-    "life and death.",
-    "justice.",
-    "family.",
-    "power.",
-    "change versus tradition.",
-  ];
   let theme =
     themeStems[Math.floor(Math.random() * themeStems.length)] +
     themeIdea[Math.floor(Math.random() * themeIdea.length)];
   // evidence
-  let evidenceStem = [
-    "The text states ",
-    "According to the article ",
-    "In the article, the author states ",
-    "In the text, the author writes ",
-    "It was discovered that ",
-    "The narrator states that ",
-    "The character states ",
-  ];
   let evidence = evidenceStem[Math.floor(Math.random() * evidenceStem.length)];
   // reasoning
-  let reasoningStem = [
-    "This indicates ",
-    "This supports the claim ",
-    "This is important because ",
-    "This suggests that ",
-    "This shows ",
-    "This means ",
-    "This reveals ",
-    "This expresses the idea that ",
-    "This confirms ",
-    "The author's point is that ",
-    "This is significant because ",
-  ];
   let reasoning =
     reasoningStem[Math.floor(Math.random() * reasoningStem.length)];
   // result

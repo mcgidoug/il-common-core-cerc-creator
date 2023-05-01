@@ -19,7 +19,10 @@ const rlButton6 = document.getElementById("reading_lit6");
 // -------- CERC RESULT --------
 let result = document.getElementById("result_box");
 
-// -------- MAIN FUNCTIONALITY --------
+// -------- CERC RESULT --------
+let storeButton = document.getElementById("store_button");
+
+// -------- CERC FUNCTIONALITY --------
 function readingLit(claimArray) {
   // claim
   let claim = claimArray[Math.floor(Math.random() * claimArray.length)];
@@ -35,9 +38,27 @@ function readingLit(claimArray) {
   result.innerHTML = `<span class="claim_color">${claim}</span> <span class="evidence_color">${evidence}[INSERT QUOTE HERE]</span>. <span class="reasoning_color">${reasoning}</span>.<span class="conclusion_color">${conclusion}</span>.`;
 }
 
+// -------- CERC FUNCTIONALITY --------
+function storeFunction() {
+  const content = result.innerHTML;
+  // Retrieve existing stored items or create a new empty array
+  let storedItems = JSON.parse(localStorage.getItem("cercContentList")) || [];
+  // Add the current item to the array
+  storedItems.push(content);
+  // Store the updated array in local storage
+  localStorage.setItem("cercContentList", JSON.stringify(storedItems));
+  // Display the list of stored items
+  const storedContentElement = document.getElementById("store_box");
+  storedContentElement.innerHTML = "";
+  storedItems.forEach((item) => {
+    storedContentElement.innerHTML += `<li>${item}</li>`;
+  });
+}
+
 // -------- EVENT LISTENERS --------
 rlButton2.addEventListener("click", () => readingLit(themeStems));
 rlButton3.addEventListener("click", () => readingLit(interactStems));
 rlButton4.addEventListener("click", () => readingLit(interpretationStems));
 rlButton5.addEventListener("click", () => readingLit(comparisonStems));
 rlButton6.addEventListener("click", () => readingLit(povStems));
+storeButton.addEventListener("click", storeFunction);

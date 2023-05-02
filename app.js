@@ -53,19 +53,21 @@ function copyCerc() {
 
 // -------- SAVE CERC --------
 function saveFunction() {
-  let content = result.innerHTML;
-  // Retrieve existing saved items or create a new empty array
-  let savedItems = JSON.parse(localStorage.getItem("cercContentList")) || [];
-  // Add the current item to the array
-  savedItems.push(content);
-  // Save the updated array in local storage
-  localStorage.setItem("cercContentList", JSON.stringify(savedItems));
-  // Display the list of stored items
-  const savedContentElement = document.getElementById("save_box");
-  savedContentElement.innerHTML = "";
-  savedItems.forEach((item) => {
-    savedContentElement.innerHTML += `<li>${item}</li>`;
-  });
+  if (document.getElementById("result_box").innerHTML.trim() !== "") {
+    let content = result.innerHTML;
+    // Retrieve existing saved items or create a new empty array
+    let savedItems = JSON.parse(localStorage.getItem("cercContentList")) || [];
+    // Add the current item to the array
+    savedItems.push(content);
+    // Save the updated array in local storage
+    localStorage.setItem("cercContentList", JSON.stringify(savedItems));
+    // Display the list of stored items
+    const savedContentElement = document.getElementById("save_box");
+    savedContentElement.innerHTML = "";
+    savedItems.forEach((item) => {
+      savedContentElement.innerHTML += `<li>${item}</li>`;
+    });
+  }
 }
 
 // -------- COPY SAVED CERCS --------

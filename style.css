@@ -43,8 +43,8 @@
 }
 
 #show_button,
-#store_button,
-#clear_button,
+#save_button,
+#clear_storage_button,
 #clear_cerc_button {
   font-size: 1rem;
   margin: 10px;
@@ -52,13 +52,17 @@
   cursor: pointer;
 }
 
-#store_box {
+#save_box {
   border: 2px solid black;
   padding: 20px;
   width: 70vw;
   font-size: 1rem;
   max-height: 200px;
   overflow: auto;
+}
+
+#save_box > li {
+  margin-bottom: 15px;
 }
 
 .claim_color {

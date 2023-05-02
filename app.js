@@ -18,11 +18,14 @@ const rlButton6 = document.getElementById("reading_lit6");
 
 // -------- CERC RESULT --------
 let result = document.getElementById("result_box");
+let clearCercButton = document.getElementById("clear_cerc_button");
 
 // -------- CERC RESULT --------
+let showButton = document.getElementById("show_button");
 let storeButton = document.getElementById("store_button");
+let clearButton = document.getElementById("clear_button");
 
-// -------- CERC FUNCTIONALITY --------
+// -------- CREATE CERC --------
 function readingLit(claimArray) {
   // claim
   let claim = claimArray[Math.floor(Math.random() * claimArray.length)];
@@ -38,9 +41,9 @@ function readingLit(claimArray) {
   result.innerHTML = `<span class="claim_color">${claim}</span> <span class="evidence_color">${evidence}[INSERT QUOTE HERE]</span>. <span class="reasoning_color">${reasoning}</span>.<span class="conclusion_color">${conclusion}</span>.`;
 }
 
-// -------- CERC FUNCTIONALITY --------
+// -------- STORE CERC --------
 function storeFunction() {
-  const content = result.innerHTML;
+  let content = result.innerHTML;
   // Retrieve existing stored items or create a new empty array
   let storedItems = JSON.parse(localStorage.getItem("cercContentList")) || [];
   // Add the current item to the array
@@ -55,10 +58,34 @@ function storeFunction() {
   });
 }
 
+// -------- SHOW STORED CERCS --------
+function showStoredContent() {
+  const storedContentElement = document.getElementById("store_box");
+  // Retrieve existing stored items or create a new empty array
+  let storedItems = JSON.parse(localStorage.getItem("cercContentList")) || [];
+  // Display the list of stored items
+  storedContentElement.innerHTML = "";
+  if (storedItems.length === 0) {
+    storedContentElement.innerHTML = "No stored content.";
+  } else {
+    storedItems.forEach((item) => {
+      storedContentElement.innerHTML += `<li>${item}</li>`;
+    });
+  }
+}
+
 // -------- EVENT LISTENERS --------
 rlButton2.addEventListener("click", () => readingLit(themeStems));
 rlButton3.addEventListener("click", () => readingLit(interactStems));
 rlButton4.addEventListener("click", () => readingLit(interpretationStems));
 rlButton5.addEventListener("click", () => readingLit(comparisonStems));
 rlButton6.addEventListener("click", () => readingLit(povStems));
+
+showButton.addEventListener("click", showStoredContent);
 storeButton.addEventListener("click", storeFunction);
+
+clearCercButton.addEventListener("click", () => (result.innerHTML = ""));
+clearButton.addEventListener("click", () => {
+  localStorage.clear();
+  location.reload();
+});

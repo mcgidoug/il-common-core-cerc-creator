@@ -19,11 +19,13 @@ const rlButton6 = document.getElementById("reading_lit6");
 // -------- CERC RESULT --------
 let result = document.getElementById("result_box");
 let clearCercButton = document.getElementById("clear_cerc_button");
+let copyCercButton = document.getElementById("copy_cerc_button");
 
-// -------- CERC RESULT --------
+// -------- SAVE RESULTS --------
 let showButton = document.getElementById("show_button");
 let saveButton = document.getElementById("save_button");
 let clearStorageButton = document.getElementById("clear_storage_button");
+let copyStorageButton = document.getElementById("copy_storage_button");
 
 // -------- CREATE CERC --------
 function readingLit(claimArray) {
@@ -41,6 +43,14 @@ function readingLit(claimArray) {
   result.innerHTML = `<span class="claim_color">${claim}</span> <span class="evidence_color">${evidence}[INSERT QUOTE HERE]</span>. <span class="reasoning_color">${reasoning}</span>.<span class="conclusion_color">${conclusion}</span>.`;
 }
 
+// -------- COPY CERC --------
+function copyCerc() {
+  let text = document.getElementById("result_box").innerHTML;
+  navigator.clipboard.writeText(
+    text.replace(/<.*?>/g, "").replace(/[<>]/g, "")
+  );
+}
+
 // -------- SAVE CERC --------
 function saveFunction() {
   let content = result.innerHTML;
@@ -56,6 +66,14 @@ function saveFunction() {
   savedItems.forEach((item) => {
     savedContentElement.innerHTML += `<li>${item}</li>`;
   });
+}
+
+// -------- COPY SAVED CERCS --------
+function copySavedCercs() {
+  let text = document.getElementById("save_box").innerHTML;
+  navigator.clipboard.writeText(
+    text.replace(/<.*?>/g, "").replace(/[<>]/g, "")
+  );
 }
 
 // -------- SHOW SAVED CERCS --------
@@ -83,6 +101,9 @@ rlButton6.addEventListener("click", () => readingLit(povStems));
 
 showButton.addEventListener("click", showSavedContent);
 saveButton.addEventListener("click", saveFunction);
+
+copyCercButton.addEventListener("click", copyCerc);
+copyStorageButton.addEventListener("click", copySavedCercs);
 
 clearCercButton.addEventListener("click", () => (result.innerHTML = ""));
 clearStorageButton.addEventListener("click", () => {

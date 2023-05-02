@@ -45,7 +45,9 @@
 #show_button,
 #save_button,
 #clear_storage_button,
-#clear_cerc_button {
+#clear_cerc_button,
+#copy_cerc_button,
+#copy_storage_button {
   font-size: 1rem;
   margin: 10px;
   padding: 15px;

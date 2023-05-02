@@ -82,6 +82,10 @@ footer {
   margin-top: 15px;
 }
 
+a:visited {
+  color: inherit;
+}
+
 /* MEDIA QUERIES - TABLETS */
 
 @media screen and (max-width: 1024px) {

@@ -44,7 +44,7 @@ function readingLit(claimArray) {
   let conclusion =
     conclusionStem[Math.floor(Math.random() * conclusionStem.length)];
   // result box
-  result.innerHTML = `<span class="claim_color">${claim}</span> <span class="evidence_color">.${evidence}</span>. <span class="reasoning_color">${reasoning}</span><span class="transition_color">${transition}</span>.<span class="conclusion_color">${conclusion}</span>.`;
+  result.innerHTML = `<span class="claim_color">${claim}.</span><span class="evidence_color">${evidence}.</span><span class="reasoning_color">${reasoning}.</span><span class="transition_color">${transition}.</span><span class="conclusion_color">${conclusion}.</span>`;
   // find [  ] with regex - make html element
   let htmlString = result.innerHTML;
   let regex = /\[(.*?)\]/g;

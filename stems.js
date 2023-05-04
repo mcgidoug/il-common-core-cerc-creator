@@ -25,7 +25,7 @@ export const interactStems = [
   "These ideas highlight how_____",
   "This event highlights how_____",
   "This idea behind_____shows how the characters interact_____",
-  " The idea of___affects the relationship between (character 1) and (character 2)since_____",
+  " The idea of___affects the relationship between [character 1] and [character 2] since_____",
 ];
 
 export const interpretationStems = [

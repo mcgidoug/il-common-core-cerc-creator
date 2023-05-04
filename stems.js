@@ -14,54 +14,6 @@ export const themeStems = [
   "The theme of _____ is significant because it reveals_____",
 ];
 
-export const evidenceStem = [
-  "The text states,",
-  "According to the article,",
-  "In the article, the author states,",
-  "In the text, the author writes,",
-  "It was discovered that,",
-  "The narrator states that,",
-  "The character states,",
-  "[Expert's name] suggests that,",
-  "As [author's name] explains,",
-  "In support of this claim,",
-  "[Statistic/fact] indicates that _____",
-  "[Witness's name] observed that,",
-  "[Quote from a reputable source],",
-  "As demonstrated by [experiment/study],",
-  "[Historical event] serves as evidence for_____",
-  "[Personal experience] provides evidence that_____",
-];
-
-export const reasoningStem = [
-  "This indicates_____",
-  "This supports the claim_____",
-  "This is important because_____",
-  "This suggests that_____",
-  "This shows_____",
-  "This means_____",
-  "This reveals_____",
-  "This expresses the idea that_____",
-  "This confirms_____",
-  "The author's point is that_____",
-  "This is significant because_____",
-];
-
-export const conclusionStem = [
-  "In conclusion,_____",
-  "To end,_____",
-  "In conclusion, it is evident that_____",
-  "Ultimately, the evidence supports the idea that_____",
-  "After considering all the facts, it is clear that_____",
-  "To sum up, the key takeaways from this essay are_____",
-  "In summary, it can be concluded that_____",
-  "In light of the evidence presented, it is safe to say that_____",
-  "In the end, the arguments presented here demonstrate that_____",
-  "As demonstrated by the evidence, it is clear that_____",
-  "To conclude, this essay has shown that_____",
-  "Overall, the findings of this study suggest that_____",
-];
-
 export const interactStems = [
   "The character(s) of the text are_____",
   "The idea(s) of the text are_____",
@@ -118,4 +70,73 @@ export const povStems = [
   "From where [character's name] stands, it appears that_____",
   "[Character's name] has a unique perspective on_____",
   "Seeing this from [character's name]'s point of view, we can understand_____",
+];
+
+export const evidenceStem = [
+  "The text states, [Quote]",
+  "According to the article, [Quote]",
+  "In the article, the author states, [Quote]",
+  "In the text, the author writes, [Quote]",
+  "It was discovered that, [Quote]",
+  "The narrator states that, [Quote]",
+  "The character states, [Quote]",
+  "[Expert's name] suggests that, [Quote]",
+  "As [author's name] explains, [Quote]",
+  "In support of this claim, [Quote]",
+  "[Statistic/fact] indicates that _____",
+  "[Witness's name] observed that, [Quote]",
+  "[Quote from a reputable source],",
+  "As demonstrated by [experiment/study],",
+  "[Historical event] serves as evidence for_____",
+  "[Personal experience] provides evidence that_____",
+];
+
+export const reasoningStem = [
+  "This indicates_____",
+  "This supports the claim_____",
+  "This is important because_____",
+  "This suggests that_____",
+  "This shows_____",
+  "This means_____",
+  "This reveals_____",
+  "This expresses the idea that_____",
+  "This confirms_____",
+  "The author's point is that_____",
+  "This is significant because_____",
+];
+
+export const transitionWords = [
+  "Additionally,_____",
+  "Furthermore,_____",
+  "Moreover,_____",
+  "In addition,_____",
+  "Besides,_____",
+  "Likewise,_____",
+  "Equally important,_____",
+  "Similarly,_____",
+  "Not only... but also,_____",
+  "As well as,_____",
+  "Let's not forget,_____",
+  "Coupled with,_____",
+  "What's more,_____",
+  "Correspondedly,_____",
+  "It is also essential to note,_____",
+  "Another key point,_____",
+  "In the same vein,_____",
+  "Along the same lines,_____",
+];
+
+export const conclusionStem = [
+  "In conclusion,_____",
+  "To end,_____",
+  "In conclusion, it is evident that_____",
+  "Ultimately, the evidence supports the idea that_____",
+  "After considering all the facts, it is clear that_____",
+  "To sum up, the key takeaways from this essay are_____",
+  "In summary, it can be concluded that_____",
+  "In light of the evidence presented, it is safe to say that_____",
+  "In the end, the arguments presented here demonstrate that_____",
+  "As demonstrated by the evidence, it is clear that_____",
+  "To conclude, this essay has shown that_____",
+  "Overall, the findings of this study suggest that_____",
 ];

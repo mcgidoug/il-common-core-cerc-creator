@@ -7,6 +7,7 @@ import {
   interpretationStems,
   comparisonStems,
   povStems,
+  transitionWords,
 } from "./stems.js";
 
 // -------- RL BUTTONS --------
@@ -36,11 +37,30 @@ function readingLit(claimArray) {
   // reasoning
   let reasoning =
     reasoningStem[Math.floor(Math.random() * reasoningStem.length)];
+  // transition
+  let transition =
+    transitionWords[Math.floor(Math.random() * transitionWords.length)];
   // conclusion
   let conclusion =
     conclusionStem[Math.floor(Math.random() * conclusionStem.length)];
   // result box
-  result.innerHTML = `<span class="claim_color">${claim}</span> <span class="evidence_color">${evidence}[INSERT QUOTE HERE]</span>. <span class="reasoning_color">${reasoning}</span>.<span class="conclusion_color">${conclusion}</span>.`;
+  result.innerHTML = `<span class="claim_color">${claim}</span> <span class="evidence_color">.${evidence}</span>. <span class="reasoning_color">${reasoning}</span><span class="transition_color">${transition}</span>.<span class="conclusion_color">${conclusion}</span>.`;
+  // find [  ] with regex - make html element
+  let htmlString = result.innerHTML;
+  let regex = /\[(.*?)\]/g;
+  let newHtmlString = htmlString.replace(
+    regex,
+    '<span class="quote_color">[$1]</span>'
+  );
+  result.innerHTML = newHtmlString;
+  // select all span elements with the class name "quote_color"
+  let quoteElements = result.querySelectorAll(".quote_color");
+  if (quoteElements) {
+    quoteElements.forEach((element) => {
+      element.style.color = "red";
+      element.style.backgroundColor = "inherit";
+    });
+  }
 }
 
 // -------- COPY CERC --------

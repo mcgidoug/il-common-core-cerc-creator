@@ -54,6 +54,21 @@
   cursor: pointer;
 }
 
+#clear_storage_button,
+#clear_cerc_button {
+  background-color: rgba(179, 37, 37, 0.432);
+}
+
+#save_button,
+#show_button {
+  background-color: rgba(54, 122, 59, 0.205);
+}
+
+#copy_cerc_button,
+#copy_storage_button {
+  background-color: rgba(172, 221, 250, 0.582);
+}
+
 #save_box {
   border: 2px solid black;
   padding: 20px;
@@ -78,6 +93,10 @@
 .reasoning_color {
   color: black;
   background-color: rgba(224, 142, 20, 0.887);
+}
+.transition_color {
+  color: black;
+  background-color: rgba(172, 221, 250, 0.582);
 }
 .conclusion_color {
   color: black;

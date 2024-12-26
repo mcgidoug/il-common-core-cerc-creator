@@ -6,4 +6,4 @@ With this program, students can easily select the Common Core Writing Standard t
 
 ## Deployment
 
-To use this program visit the [GitHub Deployment](https://mcgidoug.github.io/il-common-core-cerc-creator/)
+To use this program visit the [GitHub Deployment](http://www.cercbuddy.com/)
